@@ -1,5 +1,4 @@
 /// <reference types="node"/>
-
 import fs = require("fs");
 
 interface ServerCancellationToken {
