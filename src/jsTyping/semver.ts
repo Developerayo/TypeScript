@@ -33,7 +33,7 @@ namespace ts {
             const rgx = isPrerelease ? prereleaseSemverRegex : semverRegex;
             const match = rgx.exec(semver);
             return match ? new Semver(stringToInt(match[1]), stringToInt(match[2]), stringToInt(match[3]), isPrerelease) : undefined;
-        }
+        } 
 
         private constructor(
             readonly major: number, readonly minor: number, readonly patch: number,
